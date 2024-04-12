@@ -1,5 +1,7 @@
 body {
+  font-family: serif;
   background-color: #0F1314;
+  color: #F0E5D3;
 }
 
 h1 {
@@ -13,7 +15,19 @@ nav {
 
 p {
   margin-bottom: 20px;
-  color: #F0E5D3;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+} 
+
+li::marker {
+  color: inherit;
 }
 
 #main_title {
@@ -34,14 +48,9 @@ p {
 
 #navbar a {
   color: white;
-  text-decoration: none;
   padding: 10px;
   display: inline-block;
 }
-
-#navbar a:hover {
-  text-decoration: underline;
-} 
 
 #underline {
   border-bottom: 2px solid white;
