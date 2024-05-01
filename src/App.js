@@ -1,5 +1,5 @@
-import './App.css';
 import Page from './Page.js';
+import Section from './Section.js';
 import Blurb from './Blurb.js';
 import Projects from './Project.js';
 
@@ -7,8 +7,12 @@ import Projects from './Project.js';
 function App() {
   return (
     <Page>
-      <Blurb />
-      <Projects />
+      <Section name='About'>
+        <Blurb />
+      </Section>
+      <Section name='Recent Projects'>
+        <Projects />
+      </Section>
     </Page>
   );
 }

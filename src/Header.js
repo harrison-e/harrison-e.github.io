@@ -1,8 +1,6 @@
-import './Header.css'
-
 function Name() {
   return (
-    <a href='/' className='text-center text-5xl hover:animate-pulse'>
+    <a href='/' className='text-center text-3xl sm:text-5xl hover:animate-pulse'>
       harrison-e
     </a>
   );

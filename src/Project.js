@@ -24,17 +24,22 @@ const projects = [{
 
 
 
-function ProjectDescription({ name, link, lang, desc, children }) {
+function ProjectCard({ name, link, lang, desc, children }) {
     return (
-      <a href={ link } className='rounded-md p-4 bg-gunmetal hover:bg-gunmetal-light flex flex-row space-x-4'>
+      <a href={ link } className='rounded-md p-4 bg-gunmetal hover:bg-gunmetal-light flex flex-col sm:flex-row space-x-4'>
         <div className='basis-auto flex flex-col'>
-          <h1 className='text-xl text-stone-200 font-[DrukWide]'> { name } </h1>
+          <h1 className='text-lg sm:text-xl text-stone-200 font-[DrukWide]'> { name } </h1>
           <p className='text-md text-stone-200 font-[DrukWide] pb-4'> { lang } </p>
           <p> { desc } </p>
         </div>
-        <div className='basis-full grid gap-4 content-center'>
-          { children }
-        </div>
+        {
+          children ? 
+          <div className='basis-full grid gap-4 content-center'>
+            { children }
+          </div>
+          : 
+          null
+        }
       </a>
     );
 }
@@ -42,42 +47,42 @@ function ProjectDescription({ name, link, lang, desc, children }) {
 function Project({ name, link, lang, images, videos, desc }) {
   if (images === null && videos === null) {
     return (
-      <ProjectDescription name={ name } link={ link } lang={ lang } desc={ desc } />
+      <ProjectCard name={ name } link={ link } lang={ lang } desc={ desc } />
     );
   } else if (videos === null) {
     const imageItems = images.map(image =>
     <li className='py-1'>
       <a href={ image }>
-        <img src={ image } alt={ 'Image of ' + name } />
+        <img className='rounded-md' src={ image } alt={ 'Image of ' + name } />
       </a>
     </li>
     );
     return (
-      <ProjectDescription name={ name } link={ link } lang={ lang } desc={ desc }>
+      <ProjectCard name={ name } link={ link } lang={ lang } desc={ desc }>
         <ul>
           { imageItems }
         </ul>
-      </ProjectDescription>
+      </ProjectCard>
     );
   } else {
     const videoItems = videos.map(video => 
     <li className='py-1'>
-      <iframe width="320" height="180" src={ video } title="YouTube video player" frameborder="0" allow="clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe className='rounded-md sm:w-[20rem] sm:h-[11.25rem] aspect-video' src={ video } title='YouTube video player' frameborder='0' allow='clipboard-write; encrypted-media; web-share' allowfullscreen></iframe>
     </li>
     );
     return (
-      <ProjectDescription name={ name } link={ link } lang={ lang } desc={ desc }>
+      <ProjectCard name={ name } link={ link } lang={ lang } desc={ desc }>
         <ul>
           { videoItems }
         </ul>
-      </ProjectDescription>
+      </ProjectCard>
     );
   }
 }
 
 function Projects() {
   const projectItems = projects.map(project => 
-  <li className='py-5'>
+  <li className='pb-10'>
     <Project name={project.name} 
     link={project.link} 
     lang={project.lang}
@@ -88,14 +93,9 @@ function Projects() {
   );
   
   return (
-    <>
-      <h1 className='text-3xl text-center text-stone-200 font-[DrukWide]'>
-        Recent Projects
-      </h1>
-      <ul>
-        { projectItems }
-      </ul>
-    </>
+    <ul>
+      { projectItems }
+    </ul>
   );
 }
 
