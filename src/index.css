@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: DrukWide;
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/DrukWide-Medium-Trial.otf') format('opentype');
+  }
+  @font-face {
+    font-family: JetBrains Mono;
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/JetBrainsMonoNerdFontMono-SemiBold.ttf') format('truetype');
+  }
+}
+
+header {
+  font-family: DrukWide, serif;
+}
+
+body {
+  font-family: JetBrains Mono, serif;
+  background: #0f1314;
+}
+
