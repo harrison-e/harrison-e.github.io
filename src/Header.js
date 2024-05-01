@@ -2,7 +2,7 @@ import './Header.css'
 
 function Name() {
   return (
-    <a href='#' className='text-center text-5xl hover:animate-pulse'>
+    <a href='/' className='text-center text-5xl hover:animate-pulse'>
       harrison-e
     </a>
   );
@@ -21,7 +21,7 @@ function Links() {
     <div className='flex space-x-8 place-content-center'>
       <Link url='https://www.github.com/harrison-e' label='GitHub' />
       <Link url='https://www.linkedin.com/in/harrison-eckert' label='LinkedIn' />
-      <Link url='#' label='Blog' />
+      <Link url='/' label='Blog' />
     </div>
   );
 }
