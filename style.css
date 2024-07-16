@@ -7,9 +7,13 @@
 }
 
 body {
-  padding: 2em 4em;
+  padding: 2em;
   color: var(--marble);
   background-color: var(--coal);
+}
+
+.title {
+  font-size: 4em;
 }
 
 .center {
