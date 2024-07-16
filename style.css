@@ -11,3 +11,10 @@ body {
   color: var(--marble);
   background-color: var(--coal);
 }
+
+.center {
+  margin: auto;
+  text-align: center;
+}
+
+
