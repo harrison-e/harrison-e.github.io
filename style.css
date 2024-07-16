@@ -1,3 +1,13 @@
+:root {
+  --marble:   #efecec;
+  --clay:     #5c5757;
+  --slate:    #494545;
+  --basalt:   #363434;
+  --coal:     #242222;
+}
+
 body {
   padding: 2em 4em;
+  color: var(--marble);
+  background-color: var(--coal);
 }
