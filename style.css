@@ -12,10 +12,6 @@ body {
   background-color: var(--coal);
 }
 
-.title {
-  font-size: 6em;
-}
-
 .center {
   margin: auto;
   text-align: center;
