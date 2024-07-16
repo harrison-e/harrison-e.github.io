@@ -7,7 +7,6 @@
 }
 
 body {
-  padding: 2em;
   color: var(--marble);
   background-color: var(--coal);
 }
@@ -15,6 +14,10 @@ body {
 .center {
   margin: auto;
   text-align: center;
+}
+
+.padded {
+  padding: 2em;
 }
 
 

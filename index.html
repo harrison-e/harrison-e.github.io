@@ -7,10 +7,34 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <div class="center">
+    <div class="center padded">
       <h1 style="font-size:2.5em">Harrison Eckert</h1>
       <p>
       My name is Harrison and I am studying Computer Science at Northeastern University. The focus of my study is computer systems, but I enjoy learning about all sorts of computer hardware and software. I'm currently working at <a href="https://tuniklab.sites.northeastern.edu/">Northeastern's Movement Neuroscience Lab,</a> as a neurostimulation engineer co-op.
+      </p>
+    </div>
+    <div class="center padded">
+      <h1>Projects</h1>
+
+      <h2>Content Delivery Network</h2>
+      <p>
+      Developed and deployed a functional CDN, written in Python. Successfully distributed HTTP and DNS server programs among remote machines, using scripts. Leveraged dynamic caching algorithm to minimize client latency repeat requests to main server for popular content. <br>
+      <a href="https://www.github.com/harrison-e/cdn">Link to GitHub repository.</a>
+      </p>
+      <br>
+
+      <h2>Predicting the Outcome of Penalty Kicks</h2>
+      <p>
+      Implemented a neural network to predict the outcome of a penalty kick in a game of soccer, using PyTorch and OpenCV libraries. Programatically estimated pose data from curated dataset of FIFA videos, and used said data to train a neural network. <br>
+      <a href="https://www.github.com/harrison-e/predicting-penalties">Link to GitHub repository.</a>
+      </p>
+      <br>
+
+      <h2>Photomosaic Generator and Image Processor</h2>
+      <p>
+      <b>Photomosaic Generator:</b> Expanded upon image processor to allow the creation of a photomosaic, given a base image file and a directory of images to use as a tileset. Implemented AVL tree to organize tileset, keying on average RGB, to find closest tile match for any given segment of the base image. <br>
+      <b>Image Processor:</b> Built on C stb image library to allow editing of .png, .jpg, and .bmp image files, via CLI. Includes an implementation of Pointillism Art algorithm <a href="https://www.semanticscholar.org/paper/Create-Pointillism-Art-from-Digital-Images-Analysis-Hong-Liu/a0c7e67fa6201fac80eda4d4f7fd1023ce6c7cbf">(link to PDF).</a><br>
+      <a href="https://www.github.com/harrison-e/photomosaic"> Link to GitHub repository.</a>
       </p>
     </div>
   </body>
