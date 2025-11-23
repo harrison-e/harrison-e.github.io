@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>harrison-e.github.io</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <script src="common.js"></script>
+    <script>document.write(loadNav());</script>
+
+    <div class="content">
+      <!-- Professional Work -->
+      <h1 class="center">Work</h1>
+
+      <h2>Software Engineering Co-op &mdash; Teledyne LeCroy</h2>
+      <i>September 2025 &ndash; Present</i>
+      <p>
+      Working on the vertical market software team, contributing to compliance testing software for USB, PCIe, and DisplayPort standards. Performing compliance testing for above standards using LeCroy oscilloscopes and data analysis tools. In addition to manual hardware testing, improving data analysis and reporting from in-house regression testing servers, ensuring software quality and stability. All programming work done in Python, with some scripting done in PowerShell.
+      </p>
+      <br>
+
+      <h2>Telemetry Lead, Firmware Engineer &mdash; Northeastern Electric Racing Club</h2>
+      <i>January 2025 &ndash; May 2025</i>
+      <p>
+      Worked primarily on <a href="https://github.com/Northeastern-Electric-Racing/Calypso">Calypso</a>, a Rust software designed to translate CAN packets from various microcontrollers on the car into MQTT messages to be received for data analysis and visualization. I developed <i>Daedalus</i>, a Rust procedural macro system, which could take in JSON specifications for the structure of all CAN packets on the car, and dynamically write functions to decode and encode the bits, at compilation of the program. I also helped develop CI/CD guardrails around the spec, to help developers writing the JSON comply with the spec.
+      </p>
+      <br>
+
+      <h2>Software Engineering Co-op &mdash; Northeastern Movement Neuroscience Lab</h2>
+      <i>June 2024 &ndash; December 2024</i>
+      <p>
+      Worked on introducing <a href="https://www.rtxi.org">RTXI</a> into the lab environment to facilitate future experiments that required sub-millisecond timing precision. Developed C++ modules for outputting pulse signals at particular phases of a given signal, for calculating the envelope of an amplitude-modulated input signal, and for translating force sensor inputs.
+      </p>
+
+      <!-- Personal Projects -->
+      <h1 class="center">Projects</h1>
+
+      <h2>Krug</h2>
+      <p>
+      A LLM-powered Discord bot designed to help League of Legends players quickly and easily access a wide variety of game knowledge.
+      </p>
+      <p>
+      Leverages LangGraph for RAG, FAISS vector storage for performant semantic retrieval of game information, and MCP protocol to orchestrate retrieval from various data sources.
+      </p>
+      <a href="https://www.github.com/nsorvino/krug">Link to GitHub repository.</a>
+      <br>
+
+      <h2>Content Delivery Network</h2>
+      <p>
+      Developed and deployed a functional CDN for HTTP requests, written in Python. Successfully distributed custom HTTP and DNS server programs among remote Linux machines, using BASH scripts. Leveraged dynamic caching algorithm to minimize both client latency and repeat requests to main server for popular content. <br>
+      </p>
+      <a href="https://www.github.com/harrison-e/cdn">Link to GitHub repository.</a>
+      <br>
+
+      <h2>Predicting the Outcome of Penalty Kicks</h2>
+      <p>
+      Implemented a neural network to predict the outcome of a penalty kick in a game of soccer, using PyTorch and OpenCV libraries. Programatically estimated pose data from curated dataset of FIFA videos, and used said data to train a neural network. <br>
+      </p>
+      <a href="https://www.github.com/harrison-e/predicting-penalties">Link to GitHub repository.</a>
+      <br>
+    </div>
+
+    <script>document.write(loadFooter());</script>
+  </body>
+</html>
