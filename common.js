@@ -4,7 +4,6 @@ function loadNav() {
       <a href="index.html">harrison-e.github.io</a>
       <a>|</a>
       <a href="https://github.com/harrison-e">github</a>
-      <a href="https://substack.com/@h4ison">substack</a>
     </nav>
   `;
 }
